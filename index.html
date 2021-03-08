@@ -15,14 +15,26 @@
   <body>
 
     <script>
-      var surnameUtente = prompt('Dimmi il tuo cognome:')
-      var surname = ["Ferrari", "Bianchi", "Costa", "Russo", "Gianluca"];
-      var surnameInser = surname.push(surnameUtente);
-      surname.sort();
-      console.log(surname);
-      console.log(surnameInser);
+      // var surnameUtente = prompt('Dimmi il tuo cognome:')
+      // var surname = ["Ferrari", "Bianchi", "Costa", "Russo", "Gianluca"];
+      // var surnameInser = surname.push(surnameUtente);
+      // surname.sort();
+      // console.log(surname);
+      // console.log(surnameInser);
 
-      var index = 0
+      // var index = 0;
+      var surname = ["Ferrari", "Bianchi", "Costa", "Russo", "Gianluca"];
+      surname.push(prompt('Enter your surname: '));
+      console.log('Lista non ordinata: ' + surname);
+      console.log('Lista ordinata: ');
+
+      for (var i = 0; i < surname.length; i++) {
+
+        surname.sort();
+        console.log(i + 1 + ":" + surname[i]);
+
+      }
+
     </script>
 
   </body>
