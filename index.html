@@ -24,7 +24,15 @@
       surname.sort();
 
       for (var i = 0; i < surname.length; i++) {
+
         console.log(i + 1 + ":" + surname[i]);
+        var elem = surname[i];
+
+        if (lastname == elem) {
+          var human = surname.indexOf(elem);
+          var humanNum = parseInt(human + 1);
+          console.log('Il vostro Cognome ' + lastname + ' si trova nella posizione: ' + humanNum);
+        }
 
       }
 
