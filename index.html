@@ -17,17 +17,16 @@
     <script>
 
       var surname = ["Ferrari", "Bianchi", "Costa", "Russo", "Gianluca"];
-      surname.push(prompt('Enter your surname: '));
+      var lastname = prompt("Enter your surname:");
+      surname.push(lastname);
       console.log('Lista non ordinata: ' + surname);
       console.log('Lista ordinata: ');
+      surname.sort();
 
       for (var i = 0; i < surname.length; i++) {
-
-        surname.sort();
         console.log(i + 1 + ":" + surname[i]);
 
       }
-
 
     </script>
 
